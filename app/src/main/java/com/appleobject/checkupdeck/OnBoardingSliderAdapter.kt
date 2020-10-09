@@ -14,6 +14,8 @@ class OnBoardingSliderAdapter(private val context: Context) : PagerAdapter() {
     private val images  = arrayOf(
         R.drawable.doctors_team,
         R.drawable.disease_protection,
+        R.drawable.ic_hospital,
+        R.drawable.ic_pharmacy
 
 
 
@@ -22,13 +24,17 @@ class OnBoardingSliderAdapter(private val context: Context) : PagerAdapter() {
 
     private val headings = arrayOf(
         context.getString(R.string.on_boarding_heading_1),
-        context.getString(R.string.on_boarding_heading_2)
+        context.getString(R.string.on_boarding_heading_2),
+        context.getString(R.string.on_boarding_heading_3),
+        context.getString(R.string.on_boarding_heading_4)
 
     )
 
     private val descriptions = arrayOf(
         context.getString(R.string.on_boarding_description_1),
-        context.getString(R.string.on_boarding_description_2)
+        context.getString(R.string.on_boarding_description_2),
+        context.getString(R.string.on_boarding_description_3),
+        context.getString(R.string.on_boarding_description_4)
 
     )
 
