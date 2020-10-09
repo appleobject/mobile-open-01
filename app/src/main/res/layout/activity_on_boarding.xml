@@ -40,7 +40,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_get_started"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
             android:text="@string/let_s_get_started"
             android:visibility="invisible">
 
-        </Button>
+        </com.google.android.material.button.MaterialButton>
 
         <LinearLayout
             android:id="@+id/dots_layout"
@@ -60,7 +60,7 @@
 
         </LinearLayout>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -73,7 +73,7 @@
             android:onClick="next"
             android:paddingBottom="24dp">
 
-        </Button>
+        </com.google.android.material.button.MaterialButton>
 
     </RelativeLayout>
 
