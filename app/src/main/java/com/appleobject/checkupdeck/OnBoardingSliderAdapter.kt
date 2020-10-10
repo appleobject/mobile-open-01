@@ -12,8 +12,8 @@ import androidx.viewpager.widget.PagerAdapter
 class OnBoardingSliderAdapter(private val context: Context) : PagerAdapter() {
 
     private val images  = arrayOf(
-        R.drawable.doctors_team,
-        R.drawable.disease_protection,
+        R.drawable.ic_doctors_team,
+        R.drawable.ic_disease_protection,
         R.drawable.ic_hospital,
         R.drawable.ic_pharmacy
 

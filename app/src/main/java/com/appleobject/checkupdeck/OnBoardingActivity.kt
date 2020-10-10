@@ -15,8 +15,7 @@ import kotlinx.android.synthetic.main.activity_on_boarding.*
 class OnBoardingActivity : AppCompatActivity() {
 
     private var currentPosition = 0
-    val bottomAnimation: Animation =
-        AnimationUtils.loadAnimation(applicationContext, R.anim.bottom_anim)
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,6 +44,8 @@ class OnBoardingActivity : AppCompatActivity() {
 
                 override fun onPageSelected(position: Int) {
                     addDots(position)
+                    val bottomAnimation: Animation =
+                        AnimationUtils.loadAnimation(context, R.anim.bottom_anim)
 
                     currentPosition = position
                     when (position) {
@@ -69,6 +70,7 @@ class OnBoardingActivity : AppCompatActivity() {
         }
 
         addDots(0)
+        btn_get_started.setOnClickListener { p0 -> skip(p0!!) }
 
 
     }
