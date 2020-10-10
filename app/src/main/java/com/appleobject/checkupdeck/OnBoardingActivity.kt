@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.text.Html
 import android.view.View
 import android.view.WindowManager
+import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -14,6 +15,8 @@ import kotlinx.android.synthetic.main.activity_on_boarding.*
 class OnBoardingActivity : AppCompatActivity() {
 
     private var currentPosition = 0
+    val bottomAnimation: Animation =
+        AnimationUtils.loadAnimation(applicationContext, R.anim.bottom_anim)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,6 +28,8 @@ class OnBoardingActivity : AppCompatActivity() {
         )
 
         setContentView(R.layout.activity_on_boarding)
+
+
 
 
         vp_on_boarding.apply {
@@ -47,10 +52,9 @@ class OnBoardingActivity : AppCompatActivity() {
                         1 -> btn_get_started.visibility = View.INVISIBLE
                         2 -> btn_get_started.visibility = View.INVISIBLE
                         else -> {
-                            val animation =
-                                AnimationUtils.loadAnimation(context, R.anim.bottom_anim)
-                            btn_get_started.animation = animation
+                            btn_get_started.animation = bottomAnimation
                             btn_get_started.visibility = View.VISIBLE
+                            btn_next.visibility = View.GONE
 
                         }
 
