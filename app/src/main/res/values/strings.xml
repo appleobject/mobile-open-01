@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Checkupdeck</string>
+    <string name="on_boarding_heading_1">A whole team of doctors at your disposal</string>
+    <string name="on_boarding_description_1">CheckUpdeck App gives you the opportunity to get free consultation from research done by a big team of qualified doctors</string>
+    <string name="skip">Skip</string>
+    <string name="let_s_get_started">Let\'s Get Started</string>
+    <string name="on_boarding_heading_2">Knowldege is power</string>
+    <string name="on_boarding_description_2">With the correct information you can protect yourself against major diseases</string>
+    <string name="on_boarding_heading_3">A wide range of hospitals to choose from</string>
+    <string name="on_boarding_description_3">A big number of hospitals have registered to serve users through CheckUpdeck app and more are joining everyday</string>
+    <string name="on_boarding_heading_4">Buys Meds Online</string>
+    <string name="on_boarding_description_4">With a number of pharmacy also available you can order your prescriptions directly from the app</string>
+    <string name="onboarding_slide_image">OnBoarding Slide Image</string>
 </resources>
