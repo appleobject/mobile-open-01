@@ -1,5 +1,6 @@
 package com.appleobject.checkupdeck
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.text.Html
@@ -9,6 +10,7 @@ import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.viewpager.widget.ViewPager
 import kotlinx.android.synthetic.main.activity_on_boarding.*
 
@@ -90,7 +92,7 @@ class OnBoardingActivity : AppCompatActivity() {
         }
 
         if (dots.isNotEmpty()) {
-            dots[position]?.setTextColor(resources.getColor(R.color.colorPrimaryDark))
+            dots[position]?.setTextColor(ContextCompat.getColor(this,R.color.colorPrimary))
         }
 
 
