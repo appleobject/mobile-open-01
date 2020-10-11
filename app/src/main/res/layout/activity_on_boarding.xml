@@ -63,6 +63,8 @@
         </LinearLayout>
 
         <Button
+            android:text="@string/next"
+            android:textColor="@android:color/black"
             android:id="@+id/btn_next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
